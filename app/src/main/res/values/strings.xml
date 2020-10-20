@@ -4,11 +4,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-<!--    string for start fragment-->
+    <!--    string for start fragment-->
 
-   <string name= "desc_app_str">Capture what’s on your mind &amp;
+    <string name="desc_app_str">Capture what’s on your mind &amp;
        get a reminder later at the right place or time. You can also add voice memo
        &amp; other features</string>
-
     <string name="start_button_str">Let\'s Start</string>
+
+
+     <!--    string for homeFragment-->
+    <string name="home_fragment_title_str">My Notes</string>
 </resources>

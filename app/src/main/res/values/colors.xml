@@ -10,4 +10,6 @@
 
     <color name="buttonColor">#6273ED</color>
 
+    <color name="editTextSearch">#F1F1F1</color>
+    <color name="fragmentBackgrounds">#FBFCFF</color>
 </resources>
