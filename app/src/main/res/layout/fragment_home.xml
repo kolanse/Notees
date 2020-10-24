@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -23,16 +25,29 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/home_fragment_search_et"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/edit_text_search_background"
+        android:drawableStart="@drawable/ic_baseline_search_24"
         android:ems="10"
+        android:hint="@string/home_fragment_search_hint"
         android:inputType="textPersonName"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_fragment_title_tv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_fragment_tags_recycler"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/home_fragment_search_et"
+        app:layout_constraintStart_toStartOf="@+id/home_fragment_search_et"
+        app:layout_constraintTop_toBottomOf="@+id/home_fragment_search_et" />
 </androidx.constraintlayout.widget.ConstraintLayout>
