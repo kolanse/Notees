@@ -1,17 +1,14 @@
 package com.example.notees.ui.fragments
 
-import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.example.notees.R
 import com.example.notees.databinding.FragmentStartBinding
-import com.example.notees.extensions.animateSize
+import com.example.notees.extensions.animateMovement
 import com.example.notees.navigation.AppNavigator
-import com.example.notees.navigation.AppNavigatorImpl
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -54,7 +51,7 @@ class StartFragment : Fragment() {
 
 
         var startButton = startBinding.fragmentStartLetStartBtn
-       animateSize( startButton)
+       animateMovement( startButton)
 
 
         /**

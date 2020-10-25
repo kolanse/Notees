@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBackgrounds"
+    tools:context=".ui.fragments.NewNoteFragment">
+
+    <ImageView
+        android:id="@+id/new_note_fragment_back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/new_notes_fragment_save_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_note_fragment_title_et"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/fragmentBackgrounds"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_note_fragment_back_iv" />
+
+    <TextView
+        android:id="@+id/new_notes_fragment_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/new_note_fragment_title_et"
+        app:layout_constraintTop_toBottomOf="@+id/new_note_fragment_title_et" />
+
+    <EditText
+        android:id="@+id/new_note_fragment_content_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/fragmentBackgrounds"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/new_note_fragment_recycler_tags_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_notes_fragment_time_tv" />
+
+    <Button
+        android:id="@+id/new_note_fragment_new_tag_btn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_note_fragment_recycler_tags_rv"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/new_note_fragment_new_tag_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

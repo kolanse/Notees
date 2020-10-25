@@ -12,4 +12,9 @@
 
     <color name="editTextSearch">#F1F1F1</color>
     <color name="fragmentBackgrounds">#FBFCFF</color>
+
+    <color name="blueRecycler">#58acf6</color>
+    <color name="appWhite">#FFFFFF</color>
+
+    <color name="greenRecycler">#8bd574</color>
 </resources>

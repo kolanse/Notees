@@ -12,7 +12,8 @@
     <string name="start_button_str">Let\'s Start</string>
 
 
-     <!--    string for homeFragment-->
+    <!--    string for homeFragment-->
     <string name="home_fragment_title_str">My Notes</string>
-    <string name="home_fragment_search_hint">Search anything</string>
+    <string name="home_fragment_search_hint_str">Search anything</string>
+    <string name="home_fragment_create_button_str">Create</string>
 </resources>

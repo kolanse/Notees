@@ -20,4 +20,9 @@
         android:name="com.example.notees.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/newNoteFragment"
+        android:name="com.example.notees.ui.fragments.NewNoteFragment"
+        android:label="fragment_new_note"
+        tools:layout="@layout/fragment_new_note" />
 </navigation>

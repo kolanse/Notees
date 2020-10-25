@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
  * animate increase and decrease size
  **/
 
-fun Fragment.animateSize(view: View){
+fun Fragment.animateMovement(view: View){
 
 
     var ss = this
